@@ -83,8 +83,9 @@ function install_yaffshiv
 
 function install_sasquatch
 {
+    pwd
     git clone --quiet --depth 1 --branch "master" https://github.com/devttys0/sasquatch
-    (cd sasquatch && ./build.sh)
+    (cd sasquatch && $SUDO ./build.sh)
     $SUDO rm -rf sasquatch
 }
 
